@@ -93,9 +93,7 @@ I am evaluating the relevance of a generated answer to a retrieved context.
 """
 
 # Load the data
-data = pd.read_csv(
-    "31Aug_llavamed_results/llm_answers.csv"
-)
+data = pd.read_csv("llm_answers.csv")
 
 # Evaluate each row in the data
 for index, row in tqdm(data.iterrows(), total=data.shape[0]):
